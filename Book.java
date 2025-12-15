@@ -34,6 +34,9 @@ public class Book {
             double discountAmount = this.price*(Discount/100);
             double newPrice = this.price - discountAmount;
             this.price = newPrice;
+            System.out.println("Discount applied: " + Discount + "%");
+            System.out.println("New price: " + this.price);
+
         }
         else {
             System.out.println("---------------------------------------Error discount---------------------------------------");
