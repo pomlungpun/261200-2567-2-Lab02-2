@@ -10,7 +10,7 @@ public class Main {
           hp1Book.displayDetails();
 
           hp1Book.applyDiscount(150);
-          
+          hp1Book.displayDetails();
 
 
 
