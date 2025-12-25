@@ -1,10 +1,18 @@
-public static void main(String[] args) {
-    int currentYear = 2024;
-    Patient patient = new Patient(1001, "John Doe", 1978, 175.5, 78.0);
-    patient.displayDetails(currentYear);
+public class Main {
+      public static void main(String[] args){
+          Book unknownBook = new Book();
+          unknownBook.displayDetails();
+
+          Book hp1Book = new Book("Harry Potter and the Philosopher\'s Stone", "J.K. Rowling", 350.00);
+          hp1Book.displayDetails();
+
+          hp1Book.updatePrice(100);
+          hp1Book.displayDetails();
+          hp1Book.applyDiscount(2);
 
 
 
-    Patient invalidPatient = new Patient(1002, "Joe Dohn", 1990, -160.0, -65.0);
-    invalidPatient.displayDetails(currentYear);
+
+
+  }
 }
